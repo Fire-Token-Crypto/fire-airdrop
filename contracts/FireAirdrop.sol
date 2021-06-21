@@ -13,10 +13,6 @@ contract FireAirdrop is Ownable, ReentrancyGuard {
     event MultiSendToken(address token, uint256 amount);
     // Event to express all the ETH sent
     event MultiSendEth(uint256 amount);
-    // Event to express a ERC20 transfer to one address
-    event AutoMultiSendToken(address token, uint256 amount);
-    // Event to express a ETH transfer to one address
-    event AutoMultiSendEth(uint256 amount);
     // Event to express when the owner of the contract retrieves the funds
     event ClaimedTokens(
         address indexed token,
